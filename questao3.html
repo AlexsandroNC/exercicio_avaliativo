@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title> Lista 1 - Questão 3 </title>
+    <meta charset="UTF-8">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #mostrar-resposta {
+            display: none;
+        }
+
+        label {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        label:hover {
+            background-color: #0056b3;
+        }
+
+        .resposta-correta {
+            display: none;
+            margin-top: 20px;
+            color: rgba(0, 72, 206, 0.897);
+            font-weight: bold;
+        }
+
+        #mostrar-resposta:checked + label + .resposta-correta {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Qual é a diferença entre linguagem de programação <i>Server Side e Client Side?</i> </h1>
+        <input type="text" placeholder="Digite sua resposta aqui">
+        <input type="checkbox" id="mostrar-resposta">
+
+        <label for="mostrar-resposta">Confira a resposta</label>
+
+        <p class="resposta-correta"> 
+            "<i>Client Side</i> seria o código rodando no navegador do usuário. 
+            Ele é responsável pela interface, intereção, efeitos visuais, formulários etc. 
+            Tem como vantagem respostas mais rápidas (sem depender do servidor) e menor carga.<br><br>
+            <span style="color: green;"><b>Ex:</b> <i>HTML</i> (como estrutura da página), <i>CSS</i> (folhas de estilo para layouts responsivos), <i>JavaScript</i> (animações, slides de imagem).</span>"
+            <br><br><br>
+            "Enquanto o <i>Server Side</i> roda diretamente da Web. Responsável pelo processamento de dados, acesso a banco de dados, autenticação etc. Tem como principais vantagens a segurança, pois o código não é visível pelo usuário, 
+            havendo interação direta como banco de dados e gerar páginas de forma dinâmica conforme o usuário.<br><br>
+            <span style="color: green;"><b>Ex:</b> <i>PHP</i> (usado em sites como Worpress), <i>Python</i> (com Django ou Flask), <i>Node.js</i> (JavaScript no servidor).</span>"
+        </p>
+    </div>
+
+
+</body>
+</html>

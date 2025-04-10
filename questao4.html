@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title> Lista 1 - Questão 4</title>
+    <meta charset="UTF-8">
+        
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        details {
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 0;
+            width: fit-content;
+            overflow: hidden;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        summary:-webkit-details-marker {
+            display: none;
+        }
+
+        .resposta {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        details[open] .resposta {
+            max-height: 500px;
+            padding: 15px;
+        }
+
+        .resposta p {
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: wavy;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ::selection {
+            background-color: rgb(1, 87, 99);
+            color: white;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: black;
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Desenvolvimento Web</h1>
+
+        <details>
+            <summary>O que significa semântica? Por que isso é tão importante em HTML5?</summary>
+            <div class="resposta">
+                <p>
+                    "Semântica refere-se ao significado dos comandos e como eles se comportam. 
+                    Mesmo que a sintaxe esteja correta, um erro semântico pode levar a resultados inesperados.
+                    Serve para que os programadores saibam precisamente o que as instruções de uma linguagem fazem.
+                    Descreve o significado de um programa ao executar suas instruções em uma máquina, real ou simulada."
+                </p>
+
+                <a href="https://www.dio.me/articles/a-importancia-dos-conceitos-basicos-na-programacao-sintaxe-semantica-tipos-de-dados-e-operadores" target="_blank">
+                    <strong>FONTE</strong> 
+                </a>
+            </div>
+        </details>
+    </div>
+</body>
+</html>

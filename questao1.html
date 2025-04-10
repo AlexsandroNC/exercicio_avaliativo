@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Lista 1 - Questão 1 </title>
+
+        <style>
+            h1 {
+                color:red;
+            }
+
+            #toggle {
+                display: none;
+            }
+
+            label img {
+                width: 150px;
+                cursor: pointer;
+            }
+
+            #conteudo {
+                display: none;
+                margin-top: 20px;
+            }
+
+            #toggle:checked ~ #conteudo {
+                display: block;
+            }
+
+            .caixa {
+                background-color: #f0f0f0;
+                border: 2px solid #ccc;
+                padding: 15px;
+                border-radius: 10px;
+                max-width: 600px;
+                line-height: 1.6;
+                box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+
+    <body>
+            
+        <h1> EUA/ Vale do Silício </h1>
+        <input type="checkbox" id="toggle">
+        
+        <label for="toggle">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos EUA" title="USA">
+        </label>
+        
+        <div id="conteudo">
+
+            <div class="caixa">
+            <p>
+            "O Vale do Silício (em inglês: Silicon Valley), na Califórnia, Estados Unidos, 
+            é um apelido da região da baía de São Francisco onde estão situadas várias empresas de alta tecnologia, 
+            destacando-se na produção de circuitos eletrônicos, na eletrônica e informática. O vale abrange várias cidades do estado da Califórnia, 
+            como Palo Alto, São Francisco e Santa Clara, estendendo-se até os subúrbios de São José." 
+            </p>
+
+            <p>
+            <b>Fonte:</b> <a href="http://pt.wikipedia.org/wiki/Vale_do_Sil%C3%ADcio" target="_blank"> Wikipédia </a>
+            </p>
+            </div>
+
+        </div>
+    </body>
+
+</html>
